@@ -10,8 +10,6 @@ import "./assets/css/styles.css";
 ReactGA.initialize("UA-32083114-11");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
-require("dotenv").config();
-
 class App extends Component {
   render() {
     const instafeedTarget = "instafeed";
