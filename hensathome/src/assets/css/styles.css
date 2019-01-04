@@ -1,0 +1,176 @@
+section {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+section.inverted {
+  background-color: #16131a;
+}
+section > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: #16131a; */
+  z-index: 1;
+}
+.view {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-instagram {
+  margin: 0;
+}
+.footer-instagram > .overlay {
+  text-align: center;
+  background-color: rgba(22, 19, 26, 0.8);
+  -webkit-transition: 2s background-color;
+  -o-transition: 2s background-color;
+  transition: 2s background-color;
+}
+.footer-instagram:hover > .overlay {
+  background-color: rgba(22, 19, 26, 0.4);
+}
+.footer-instagram .footer-instagram-name {
+  font-size: 9rem;
+  margin-top: 20rem;
+  margin-bottom: 8rem;
+}
+@media (max-width: 1199px) {
+  .footer-instagram .footer-instagram-name {
+    font-size: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+}
+@media (max-width: 991px) {
+  .footer-instagram .footer-instagram-name {
+    font-size: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 766px) {
+  section > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: #16131a; */
+    z-index: 1;
+  }
+  .footer-instagram > .overlay {
+    text-align: center;
+    background-color: rgba(22, 19, 26, 0.3);
+    -webkit-transition: 2s background-color;
+    -o-transition: 2s background-color;
+    transition: 2s background-color;
+  }
+  .footer-instagram:hover > .overlay {
+    background-color: rgba(22, 19, 26, 0.3);
+    /* background-color: transparent; */
+  }
+
+  .footer-instagram .footer-instagram-name {
+    font-size: 4rem;
+    margin-top: 13rem;
+    margin-bottom: 4rem;
+  }
+  .btn-lg {
+    font-size: 12px;
+  }
+}
+
+.btn {
+  border-width: 2px;
+  padding: 1rem 2.5rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-rounded-hover:hover,
+.btn-rounded-hover.active,
+.btn-rounded {
+  border-radius: 2.5rem;
+}
+.btn-rounded-hover:hover.btn-lg,
+.btn-rounded-hover.active.btn-lg,
+.btn-rounded.btn-lg {
+  border-radius: 3.5rem;
+}
+.btn-rounded-hover:hover.btn-sm,
+.btn-rounded-hover.active.btn-sm,
+.btn-rounded.btn-sm {
+  border-radius: 1.75rem;
+}
+.btn-rounded-hover:hover.btn-xs,
+.btn-rounded-hover.active.btn-xs,
+.btn-rounded.btn-xs {
+  border-radius: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.78571429;
+  color: #ffffff;
+  background-color: #2d2735;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h3,
+.h3 {
+  margin-top: 26px;
+  margin-bottom: 13px;
+}
+
+.no-padding {
+  padding: 0;
+}
+.square {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+}
