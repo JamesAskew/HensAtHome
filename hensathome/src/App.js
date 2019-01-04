@@ -25,9 +25,9 @@ class App extends Component {
               sortBy="most-recent"
               target={instafeedTarget}
               template='<div class="col-md-3 no-padding"><div class="square" style="background-image: url({{image}})"></div></div>'
-              userId={process.env.INSTAGRAM_USER_ID}
-              clientId={process.env.INSTAGRAM_CLIENT_ID}
-              accessToken={process.env.INSTAGRAM_ACCESS_TOKEN}
+              userId={REACT_APP_INSTAGRAM_USER_ID}
+              clientId={REACT_APP_INSTAGRAM_CLIENT_ID}
+              accessToken={REACT_APP_INSTAGRAM_ACCESS_TOKEN}
             />
           </div>
         </div>
