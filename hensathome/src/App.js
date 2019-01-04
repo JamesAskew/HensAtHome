@@ -10,6 +10,8 @@ import "./assets/css/styles.css";
 ReactGA.initialize("UA-32083114-11");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
+require("dotenv").config();
+
 class App extends Component {
   render() {
     const instafeedTarget = "instafeed";
@@ -25,9 +27,9 @@ class App extends Component {
               sortBy="most-recent"
               target={instafeedTarget}
               template='<div class="col-md-3 no-padding"><div class="square" style="background-image: url({{image}})"></div></div>'
-              userId={REACT_APP_INSTAGRAM_USER_ID}
-              clientId={REACT_APP_INSTAGRAM_CLIENT_ID}
-              accessToken={REACT_APP_INSTAGRAM_ACCESS_TOKEN}
+              userId={process.env.REACT_APP_INSTAGRAM_USER_ID}
+              clientId={process.env.REACT_APP_INSTAGRAM_CLIENT_ID}
+              accessToken={process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}
             />
           </div>
         </div>
